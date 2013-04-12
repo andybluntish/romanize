@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>Romanize.js</title>
+</head>
+<body>
+
+  <ol>
+    <li>Rocky <span class="to-roman">1</span></li>
+    <li>Rocky <span class="to-roman">2</span></li>
+    <li>Rocky <span class="to-roman">3</span></li>
+    <li>Rocky <span class="to-roman">4</span></li>
+    <li>Rocky <span class="to-roman">5</span></li>
+  </ol>
+
+  <ol>
+    <li>Rocky <span class="to-arabic">I</span></li>
+    <li>Rocky <span class="to-arabic">II</span></li>
+    <li>Rocky <span class="to-arabic">III</span></li>
+    <li>Rocky <span class="to-arabic">IV</span></li>
+    <li>Rocky <span class="to-arabic">V</span></li>
+  </ol>
+
+  <!--
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="jquery.romanize.js"></script>
+  -->
+  <script src="romanize.js"></script>
+  <script>
+    Roman.encode('.to-roman');
+    Roman.decode('.to-arabic');
+  </script>
+</body>
+</html>
